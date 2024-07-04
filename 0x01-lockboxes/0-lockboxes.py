@@ -6,7 +6,6 @@ def canUnlockAll(boxes):
     """Function that determines if all the boxes are opened."""
     visit = {0}
     queue = [boxes[0]]
-    
     while queue:
         box = queue.pop(0)
         for key in box:

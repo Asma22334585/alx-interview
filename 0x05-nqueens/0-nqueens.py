@@ -6,8 +6,10 @@ def place(pos, occupied_pos):
     for i in range(len(occupied_pos)):
         if (
             occupied_pos[i] == pos
-            or occupied_pos[i] - i == pos - len(occupied_pos)
-            or occupied_pos[i] + i == pos + len(occupied_pos)
+            or
+            occupied_pos[i] - i == pos - len(occupied_pos)
+            or
+            occupied_pos[i] + i == pos + len(occupied_pos)
         ):
             return False
     return True

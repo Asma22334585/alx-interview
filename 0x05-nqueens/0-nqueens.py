@@ -19,7 +19,7 @@ def queens(n, index, occupied_pos, all_taken_pos):
         return
 
     for i in range(n):
-        if can_place(i, occupied_pos):
+        if place(i, occupied_pos):
             occupied_pos.append(i)
             queens(n, index + 1, occupied_pos, all_taken_pos)
             occupied_pos.pop()
